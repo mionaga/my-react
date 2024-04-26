@@ -5,10 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+const props = {
+  color: 'White',
+  backgroundColor: 'Blue',
+  padding: 3
+}
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <p style={props}>WINGSプロジェクト</p>
 );
 
 // If you want to start measuring performance in your app, pass a function
