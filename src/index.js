@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import EventBasic from './EventBasic';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -16,7 +17,7 @@ const props = {
   padding: 3
 }
 root.render(
-  <p style={props}>WINGSプロジェクト</p>
+  < EventBasic type="time" />
 );
 
 // If you want to start measuring performance in your app, pass a function
