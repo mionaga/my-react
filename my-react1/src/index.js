@@ -21,6 +21,7 @@ import ForSort from './chap03/ForSort';
 import SelectStyle from './chap03/SelectStyle';
 import StyledPanel from './chap03/StyledPanel';
 import TitledPanel from './chap03/TitledPanel';
+import TitledPanel1 from './chap03/TitledPanel1';
 import ListTemplate from './chap03/ListTemplate';
 import TypeProp, { Member } from './chap03/TypeProp';
 import StateParent from './chap03/StateParent';
@@ -125,17 +126,19 @@ import routesScroll from './chap08/routesScroll';
 
 // ■■column■■
 import MyStore from './column/MyStore';
+import { light } from '@mui/material/styles/createPalette';
 /* eslint-enable no-unused-vars */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // #region ■■chap02■■
-root.render(
+// root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <ForNest src={ books } />
-);
+
+//  <StateParent />
+// );
 
 // setInterval(() => {
 //   root.render(
@@ -493,9 +496,9 @@ root.render(
 //   <StateNestImmer2 />
 // );
 
-// root.render(
-//   <StateTodo />
-// );
+root.render(
+  <StateTodo />
+);
 
 // root.render(
 //   <FormBasic />

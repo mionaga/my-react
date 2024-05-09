@@ -1,10 +1,13 @@
-import './StateCounter.css';
+import './StateCounter.css'
 
-export default function StateCounter({ step, onUpdate }) {
+const StateCounter = ({step, onUpdate}) => {
   const handleClick = () => onUpdate(step);
+
   return (
-    <button className="cnt" onClick={handleClick}>
-      <span>{step}</span>
+    <button className='cnt' onClick={handleClick}>
+      <span>{ step }</span>
     </button>
   );
-}
+};
+
+export default StateCounter;
